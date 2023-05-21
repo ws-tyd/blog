@@ -48,27 +48,7 @@ public class RedisConfig extends CachingConfigurerSupport {
         template.setConnectionFactory(redisConnectionFactory);
         return template;
     }
-    /**
-     * 配置一个CacheManager才能使用@Cacheable等注解
-     *
-     * 公众号：MarkerHub
-     */
 
-//    public RedisCacheConfiguration getCacheTTl(RedisTemplate<Object, Object> template,long time){
-//        // 基本配置
-//        RedisCacheConfiguration defaultCacheConfiguration =
-//                RedisCacheConfiguration
-//                        .defaultCacheConfig()
-//                        // 设置key为String
-//                        .serializeKeysWith(RedisSerializationContext.SerializationPair.fromSerializer(template.getStringSerializer()))
-//                        // 设置value 为自动转Json的Object
-//                        .serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(template.getValueSerializer()))
-//                        // 不缓存null
-//                        .disableCachingNullValues()
-//                        // 缓存数据保存1小时
-//                        .entryTtl(Duration.ofSeconds(time));
-//        return defaultCacheConfiguration;
-//    }
 //
 //    @Bean
 //    public CacheManager cacheManager(RedisTemplate<Object, Object> template) {

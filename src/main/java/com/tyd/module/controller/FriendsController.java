@@ -5,6 +5,7 @@ import com.tyd.common.exception.CustomaizeExpetion;
 import com.tyd.common.exception.ExceptionEnum;
 import com.tyd.common.util.Result;
 import com.tyd.common.util.SecurityContextHandlerUtil;
+import com.tyd.common.util.StringUtils;
 import com.tyd.module.pojo.Friends;
 import com.tyd.module.pojo.Param.FriendsParam;
 import com.tyd.module.pojo.User;
@@ -74,6 +75,7 @@ public class FriendsController {
     public Result followList(){
         return Result.ok(friendsService.queryFanList("follow"));
     }
+
     @GetMapping("/queryFriendInIds/{ids}")
     @PreAuthorize("hasAuthority('user') or hasAuthority('admin')")
     public Result queryFriendInIds(@PathVariable String ids){
@@ -82,5 +84,15 @@ public class FriendsController {
             throw new CustomaizeExpetion(ExceptionEnum.FAIL_RME_PARAM);
         }
         return Result.ok(userService.list(Wrappers.<User>lambdaQuery().in(User::getId,id)));
+    }
+    @GetMapping("/getMessageSessionID/{userId}")
+    @PreAuthorize("hasAuthority('user') or hasAuthority('admin')")
+    public Result getMessageSessionID(@PathVariable String userId){
+        if (StringUtils.isEmpty(userId)){
+            throw new CustomaizeExpetion(ExceptionEnum.FAIL_RME_PARAM);
+        }
+        User user = SecurityContextHandlerUtil.getUser();
+//        friendsService.getOne(Wrappers.<Friends>lambdaQuery().select(Friends::getId).eq(Friends::getMyId,user.getId()).eq(Friends::getFriendsId,))
+        return Result.ok();
     }
 }

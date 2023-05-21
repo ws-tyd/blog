@@ -3,6 +3,7 @@ package com.tyd.module.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -27,5 +28,7 @@ public class Friends {
   @TableField("`from`")
   private String from;
   private String remark;
+  @TableLogic
+  private String isDel;
 
 }

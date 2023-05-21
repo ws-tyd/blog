@@ -52,7 +52,9 @@ public class WebSocketServerController {
     }
 
     @OnMessage
+    //收到客户信息
     public void onMessage(String message) {
+        //判断消息类型 发给个人或者发给群聊
         RedisUtils redisUtils = ApplicationContextUtil.getBean("redisUtils", RedisUtils.class);
         JSONObject jsonObject = JSON.parseObject(message);
         System.out.println(jsonObject.get("user1"));
