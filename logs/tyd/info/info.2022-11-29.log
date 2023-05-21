@@ -1,0 +1,452 @@
+2022-11-29 21:13:34 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-29 21:13:34 INFO  main com.tyd.BlogApplication Starting BlogApplication on 礼弥 with PID 7372 (E:\javaWeb\blog\target\classes started by Administrator in E:\javaWeb\blog)
+2022-11-29 21:13:34 INFO  main com.tyd.BlogApplication The following profiles are active: dev
+2022-11-29 21:13:35 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-29 21:13:35 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-29 21:13:36 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2022-11-29 21:13:36 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisConfig' of type [com.tyd.common.config.RedisConfig$$EnhancerBySpringCGLIB$$4c6be9cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:13:36 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@29896529' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:13:36 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:13:36 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-11-29 21:13:36 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:13:36 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-11-29 21:13:36 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-29 21:13:36 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring embedded WebApplicationContext
+2022-11-29 21:13:36 INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1776 ms
+2022-11-29 21:13:37 INFO  main com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-11-29 21:13:37 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-11-29 21:13:39 INFO  main com.tyd.common.util.MinioUtil 默认存储桶已存在
+2022-11-29 21:13:39 INFO  main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+
+Using generated security password: c53609fd-fbde-4376-8edf-44da6fd21e5d
+
+2022-11-29 21:13:39 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bc18fec, org.springframework.security.web.context.SecurityContextPersistenceFilter@3117ac8d, org.springframework.security.web.header.HeaderWriterFilter@40b8158d, com.tyd.common.filter.RequestCountFilter@59f45950, com.tyd.common.filter.SimpleTokenFilter@3a8fb023, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ea039b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1978b0d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1eee9b78, org.springframework.security.web.session.SessionManagementFilter@3487947c, org.springframework.security.web.access.ExceptionTranslationFilter@7ee02968, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42172065]
+2022-11-29 21:13:39 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:13:39 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:13:39 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:13:39 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:13:39 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-29 21:13:40 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:13:40 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '/limi'
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_1
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_1
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_2
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_2
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_1
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_3
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_3
+2022-11-29 21:13:40 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_2
+2022-11-29 21:13:40 INFO  main org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Starting...
+2022-11-29 21:13:40 INFO  main org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-29 21:13:40 INFO  main org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Started.
+2022-11-29 21:13:40 INFO  main com.tyd.BlogApplication Started BlogApplication in 6.193 seconds (JVM running for 7.206)
+2022-11-29 21:14:10 INFO  http-nio-8080-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 21:14:10 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-11-29 21:14:10 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 26 ms
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-1 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/swagger-ui.html请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-2 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/springfox.css请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-4 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/swagger-ui-bundle.js请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-3 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/swagger-ui.css请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-6 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/springfox.js请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-5 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-7 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/swagger-resources/configuration/ui请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-8 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/favicon-32x32.png请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-9 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/swagger-resources/configuration/security请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-10 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/swagger-resources请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:11 INFO  http-nio-8080-exec-1 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/v2/api-docs请求的方法:GET请求时间：2022-11-29 21:14:11认证信息：null
+2022-11-29 21:14:12 INFO  http-nio-8080-exec-2 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2请求的方法:GET请求时间：2022-11-29 21:14:12认证信息：null
+2022-11-29 21:14:12 INFO  http-nio-8080-exec-6 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2请求的方法:GET请求时间：2022-11-29 21:14:12认证信息：null
+2022-11-29 21:14:12 INFO  http-nio-8080-exec-3 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2请求的方法:GET请求时间：2022-11-29 21:14:12认证信息：null
+2022-11-29 21:14:12 INFO  http-nio-8080-exec-5 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2请求的方法:GET请求时间：2022-11-29 21:14:12认证信息：null
+2022-11-29 21:14:13 INFO  http-nio-8080-exec-4 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2请求的方法:GET请求时间：2022-11-29 21:14:13认证信息：null
+2022-11-29 21:14:39 INFO  MessageBroker-1 org.springframework.web.socket.config.WebSocketMessageBrokerStats WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-11-29 21:22:19 INFO  http-nio-8080-exec-2 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/image/queryAll请求的方法:POST请求时间：2022-11-29 21:22:19认证信息：Bearer eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2NjU1NDUyMjYsImp0aSI6ImYzZmRlYmNlZmM0ODQ2MjQ4ZDI3MzA2NmFhM2M5MzgzIn0.XpxOJP20K3DG_4B-tM_dzdQLpfUErG9vI9zDtz4o894
+2022-11-29 21:22:58 INFO  SpringContextShutdownHook org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Stopping...
+2022-11-29 21:22:58 INFO  SpringContextShutdownHook org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-29 21:22:58 INFO  SpringContextShutdownHook org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Stopped.
+2022-11-29 21:22:58 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:22:58 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:22:58 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:22:58 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:22:58 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-11-29 21:22:58 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2022-11-29 21:23:11 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-29 21:23:11 INFO  main com.tyd.BlogApplication Starting BlogApplication on 礼弥 with PID 56676 (E:\javaWeb\blog\target\classes started by Administrator in E:\javaWeb\blog)
+2022-11-29 21:23:11 INFO  main com.tyd.BlogApplication The following profiles are active: dev
+2022-11-29 21:23:12 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-29 21:23:12 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-29 21:23:12 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2022-11-29 21:23:12 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisConfig' of type [com.tyd.common.config.RedisConfig$$EnhancerBySpringCGLIB$$d6cd0adf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:23:12 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@28e0e464' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:23:12 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:23:12 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-11-29 21:23:12 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:23:12 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-11-29 21:23:12 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-29 21:23:12 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring embedded WebApplicationContext
+2022-11-29 21:23:12 INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1521 ms
+2022-11-29 21:23:13 INFO  main com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-11-29 21:23:13 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-11-29 21:23:15 INFO  main com.tyd.common.util.MinioUtil 默认存储桶已存在
+2022-11-29 21:23:15 INFO  main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+
+Using generated security password: 4c7a2840-4d6b-47a2-9240-a5596595dd1f
+
+2022-11-29 21:23:15 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31a4db4f, org.springframework.security.web.context.SecurityContextPersistenceFilter@796cf2b5, org.springframework.security.web.header.HeaderWriterFilter@72bdbfe9, com.tyd.common.filter.RequestCountFilter@26d0ece6, com.tyd.common.filter.SimpleTokenFilter@419f0ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16890f00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@144dc2f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2842ef02, org.springframework.security.web.session.SessionManagementFilter@1f6e6f50, org.springframework.security.web.access.ExceptionTranslationFilter@6ae32ff0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@571c2ed8]
+2022-11-29 21:23:15 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:23:15 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:23:16 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:23:16 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-29 21:23:16 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:23:16 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '/limi'
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_1
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_1
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_2
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_2
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_1
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_3
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_3
+2022-11-29 21:23:16 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_2
+2022-11-29 21:23:16 INFO  main org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Starting...
+2022-11-29 21:23:16 INFO  main org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-29 21:23:16 INFO  main org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Started.
+2022-11-29 21:23:16 INFO  main com.tyd.BlogApplication Started BlogApplication in 5.935 seconds (JVM running for 7.138)
+2022-11-29 21:23:20 INFO  http-nio-8080-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 21:23:20 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-11-29 21:23:20 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 8 ms
+2022-11-29 21:23:21 INFO  http-nio-8080-exec-1 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/image/queryAll请求的方法:POST请求时间：2022-11-29 21:23:21认证信息：null
+2022-11-29 21:24:16 INFO  MessageBroker-1 org.springframework.web.socket.config.WebSocketMessageBrokerStats WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-11-29 21:26:59 INFO  http-nio-8080-exec-2 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-29 21:26:59认证信息：null
+2022-11-29 21:27:13 INFO  http-nio-8080-exec-3 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-29 21:27:13认证信息：null
+2022-11-29 21:27:18 INFO  http-nio-8080-exec-4 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-29 21:27:18认证信息：null
+2022-11-29 21:28:35 INFO  SpringContextShutdownHook org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Stopping...
+2022-11-29 21:28:35 INFO  SpringContextShutdownHook org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-29 21:28:35 INFO  SpringContextShutdownHook org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Stopped.
+2022-11-29 21:28:35 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:28:35 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:28:35 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:28:35 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:28:35 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-11-29 21:28:35 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2022-11-29 21:28:46 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-29 21:28:46 INFO  main com.tyd.BlogApplication Starting BlogApplication on 礼弥 with PID 56432 (E:\javaWeb\blog\target\classes started by Administrator in E:\javaWeb\blog)
+2022-11-29 21:28:46 INFO  main com.tyd.BlogApplication The following profiles are active: dev
+2022-11-29 21:28:47 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-29 21:28:47 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-29 21:28:47 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2022-11-29 21:28:47 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisConfig' of type [com.tyd.common.config.RedisConfig$$EnhancerBySpringCGLIB$$b27080b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:28:47 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@67bb4dcd' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:28:47 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:28:47 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-11-29 21:28:47 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:28:47 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-11-29 21:28:47 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-29 21:28:48 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring embedded WebApplicationContext
+2022-11-29 21:28:48 INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1441 ms
+2022-11-29 21:28:48 INFO  main com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-11-29 21:28:48 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-11-29 21:28:50 INFO  main com.tyd.common.util.MinioUtil 默认存储桶已存在
+2022-11-29 21:28:50 INFO  main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+
+Using generated security password: 9bf24804-ea0b-444b-a6f7-6c85fc81932a
+
+2022-11-29 21:28:50 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4452e13c, org.springframework.security.web.context.SecurityContextPersistenceFilter@346330b6, org.springframework.security.web.header.HeaderWriterFilter@6c737fdb, com.tyd.common.filter.RequestCountFilter@184afb78, com.tyd.common.filter.SimpleTokenFilter@35ab4260, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20d3fff4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3487947c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d964c9e, org.springframework.security.web.session.SessionManagementFilter@284f25e6, org.springframework.security.web.access.ExceptionTranslationFilter@64a7ad02, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41289e88]
+2022-11-29 21:28:50 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:28:50 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:28:50 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:28:50 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:28:50 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-29 21:28:51 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:28:51 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '/limi'
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_1
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_1
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_2
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_2
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_1
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_3
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_3
+2022-11-29 21:28:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_2
+2022-11-29 21:28:51 INFO  main org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Starting...
+2022-11-29 21:28:51 INFO  main org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-29 21:28:51 INFO  main org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Started.
+2022-11-29 21:28:51 INFO  main com.tyd.BlogApplication Started BlogApplication in 5.371 seconds (JVM running for 6.258)
+2022-11-29 21:28:57 INFO  http-nio-8080-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 21:28:57 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-11-29 21:28:57 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 9 ms
+2022-11-29 21:28:59 INFO  http-nio-8080-exec-1 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-29 21:28:59认证信息：null
+2022-11-29 21:29:50 INFO  MessageBroker-1 org.springframework.web.socket.config.WebSocketMessageBrokerStats WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-11-29 21:34:37 INFO  SpringContextShutdownHook org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Stopping...
+2022-11-29 21:34:37 INFO  SpringContextShutdownHook org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-29 21:34:37 INFO  SpringContextShutdownHook org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler Stopped.
+2022-11-29 21:34:37 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:34:37 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:34:37 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:34:37 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:34:37 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-11-29 21:34:37 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2022-11-29 21:34:48 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-29 21:34:48 INFO  main com.tyd.BlogApplication Starting BlogApplication on 礼弥 with PID 55848 (E:\javaWeb\blog\target\classes started by Administrator in E:\javaWeb\blog)
+2022-11-29 21:34:48 INFO  main com.tyd.BlogApplication The following profiles are active: dev
+2022-11-29 21:34:49 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-29 21:34:49 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-29 21:34:49 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2022-11-29 21:34:49 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisConfig' of type [com.tyd.common.config.RedisConfig$$EnhancerBySpringCGLIB$$fa62d0ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:34:49 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3cdc7b09' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:34:49 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:34:50 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-11-29 21:34:50 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:34:50 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-11-29 21:34:50 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-29 21:34:50 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring embedded WebApplicationContext
+2022-11-29 21:34:50 INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1708 ms
+2022-11-29 21:34:50 INFO  main com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-11-29 21:34:51 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-11-29 21:34:52 INFO  main com.tyd.common.util.MinioUtil 默认存储桶已存在
+2022-11-29 21:34:53 INFO  main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+
+Using generated security password: 8ad44f27-3929-46cf-bcc0-140c6dc9c277
+
+2022-11-29 21:34:53 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@434b2e0c, org.springframework.security.web.context.SecurityContextPersistenceFilter@77401977, org.springframework.security.web.header.HeaderWriterFilter@3487947c, com.tyd.common.filter.RequestCountFilter@6a7a1a0d, com.tyd.common.filter.SimpleTokenFilter@76ffc17c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cb76070, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19e5e110, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@214e3185, org.springframework.security.web.session.SessionManagementFilter@7cdb05aa, org.springframework.security.web.access.ExceptionTranslationFilter@65f470f8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@306cfb8a]
+2022-11-29 21:34:53 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:34:53 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:34:53 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:34:53 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:34:53 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-29 21:34:54 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:34:54 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '/limi'
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_1
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_1
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_2
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_2
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_1
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_3
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_3
+2022-11-29 21:34:54 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_2
+2022-11-29 21:34:54 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:34:54 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:34:54 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:34:54 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:34:54 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-11-29 21:34:54 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2022-11-29 21:34:54 INFO  main org.apache.coyote.http11.Http11NioProtocol Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:34:54 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2022-11-29 21:34:54 INFO  main org.apache.coyote.http11.Http11NioProtocol Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:34:54 INFO  main org.apache.coyote.http11.Http11NioProtocol Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:34:54 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 21:51:10 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-29 21:51:10 INFO  main com.tyd.BlogApplication Starting BlogApplication on 礼弥 with PID 56708 (E:\javaWeb\blog\target\classes started by Administrator in E:\javaWeb\blog)
+2022-11-29 21:51:10 INFO  main com.tyd.BlogApplication The following profiles are active: dev
+2022-11-29 21:51:11 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-29 21:51:11 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-29 21:51:11 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 53ms. Found 0 Redis repository interfaces.
+2022-11-29 21:51:12 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisConfig' of type [com.tyd.common.config.RedisConfig$$EnhancerBySpringCGLIB$$df187e04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:51:12 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@8a6631b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:51:12 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:51:12 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-11-29 21:51:12 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:51:12 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-11-29 21:51:12 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-29 21:51:13 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring embedded WebApplicationContext
+2022-11-29 21:51:13 INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2918 ms
+2022-11-29 21:51:14 INFO  main com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-11-29 21:51:15 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-11-29 21:51:17 INFO  main com.tyd.common.util.MinioUtil 默认存储桶已存在
+2022-11-29 21:51:17 INFO  main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+
+Using generated security password: e5d30f39-54df-4e81-8668-2a775410b2fb
+
+2022-11-29 21:51:17 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b79df53, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c7c898a, org.springframework.security.web.header.HeaderWriterFilter@4850d66b, com.tyd.common.filter.RequestCountFilter@4fc6e776, com.tyd.common.filter.SimpleTokenFilter@4cc4d454, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a86be01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c3b0cc8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8ee1404, org.springframework.security.web.session.SessionManagementFilter@61e0f9b9, org.springframework.security.web.access.ExceptionTranslationFilter@5a3be84, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34e9de8d]
+2022-11-29 21:51:18 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:51:18 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:51:18 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:51:18 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:51:18 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-29 21:51:18 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:51:18 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '/limi'
+2022-11-29 21:51:18 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-29 21:51:18 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-29 21:51:18 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-29 21:51:19 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_1
+2022-11-29 21:51:19 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_1
+2022-11-29 21:51:19 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_2
+2022-11-29 21:51:19 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_2
+2022-11-29 21:51:19 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_1
+2022-11-29 21:51:19 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_3
+2022-11-29 21:51:19 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_3
+2022-11-29 21:51:19 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_2
+2022-11-29 21:51:19 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:51:19 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:51:19 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:51:19 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:51:19 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-11-29 21:51:19 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2022-11-29 21:51:19 INFO  main org.apache.coyote.http11.Http11NioProtocol Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:51:19 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2022-11-29 21:51:19 INFO  main org.apache.coyote.http11.Http11NioProtocol Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:51:19 INFO  main org.apache.coyote.http11.Http11NioProtocol Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:51:19 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 21:51:31 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-29 21:51:31 INFO  main com.tyd.BlogApplication Starting BlogApplication on 礼弥 with PID 57576 (E:\javaWeb\blog\target\classes started by Administrator in E:\javaWeb\blog)
+2022-11-29 21:51:31 INFO  main com.tyd.BlogApplication The following profiles are active: dev
+2022-11-29 21:51:32 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-29 21:51:32 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-29 21:51:32 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2022-11-29 21:51:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisConfig' of type [com.tyd.common.config.RedisConfig$$EnhancerBySpringCGLIB$$c7efac11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:51:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@78910096' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:51:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:51:33 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-11-29 21:51:33 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:51:33 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-11-29 21:51:33 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-29 21:51:33 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring embedded WebApplicationContext
+2022-11-29 21:51:33 INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1696 ms
+2022-11-29 21:51:33 INFO  main com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-11-29 21:51:33 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-11-29 21:51:35 INFO  main com.tyd.common.util.MinioUtil 默认存储桶已存在
+2022-11-29 21:51:36 INFO  main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+
+Using generated security password: 79e524a5-a293-460e-a8f8-d81919cdae33
+
+2022-11-29 21:51:36 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70d7a49b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3186f8f5, org.springframework.security.web.header.HeaderWriterFilter@2d9df336, com.tyd.common.filter.RequestCountFilter@6a7a1a0d, com.tyd.common.filter.SimpleTokenFilter@54e0f76f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69a3bf40, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24e7087a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4509b7, org.springframework.security.web.session.SessionManagementFilter@66a93b25, org.springframework.security.web.access.ExceptionTranslationFilter@54033a65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cf3b3d7]
+2022-11-29 21:51:36 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:51:36 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:51:36 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Initializing ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:51:36 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:51:36 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-29 21:51:36 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:51:36 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '/limi'
+2022-11-29 21:51:36 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-29 21:51:36 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-29 21:51:36 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-29 21:51:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_1
+2022-11-29 21:51:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_1
+2022-11-29 21:51:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_2
+2022-11-29 21:51:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_2
+2022-11-29 21:51:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_1
+2022-11-29 21:51:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_3
+2022-11-29 21:51:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_3
+2022-11-29 21:51:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_2
+2022-11-29 21:51:37 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'brokerChannelExecutor'
+2022-11-29 21:51:37 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2022-11-29 21:51:37 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2022-11-29 21:51:37 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'clientInboundChannelExecutor'
+2022-11-29 21:51:37 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-11-29 21:51:37 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2022-11-29 21:51:37 INFO  main org.apache.coyote.http11.Http11NioProtocol Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:51:37 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2022-11-29 21:51:37 INFO  main org.apache.coyote.http11.Http11NioProtocol Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:51:37 INFO  main org.apache.coyote.http11.Http11NioProtocol Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:51:37 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-29 21:52:28 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-29 21:52:28 INFO  main com.tyd.BlogApplication Starting BlogApplication on 礼弥 with PID 59368 (E:\javaWeb\blog\target\classes started by Administrator in E:\javaWeb\blog)
+2022-11-29 21:52:28 INFO  main com.tyd.BlogApplication The following profiles are active: dev
+2022-11-29 21:52:29 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-29 21:52:29 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-29 21:52:29 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2022-11-29 21:52:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisConfig' of type [com.tyd.common.config.RedisConfig$$EnhancerBySpringCGLIB$$edc4330e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:52:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4214ae8f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:52:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:52:29 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-11-29 21:52:29 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:52:29 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-11-29 21:52:29 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-29 21:52:29 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring embedded WebApplicationContext
+2022-11-29 21:52:29 INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1461 ms
+2022-11-29 21:52:30 INFO  main com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-11-29 21:52:30 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-11-29 21:52:32 INFO  main com.tyd.common.util.MinioUtil 默认存储桶已存在
+2022-11-29 21:52:32 INFO  main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+
+Using generated security password: 08648823-2a5e-4812-8e86-ebe1907f4b67
+
+2022-11-29 21:52:32 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5443086a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25c548d1, org.springframework.security.web.header.HeaderWriterFilter@11174bf, com.tyd.common.filter.RequestCountFilter@701c223a, com.tyd.common.filter.SimpleTokenFilter@2ec5cc14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@279ab15e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a51dc38, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5740ad76, org.springframework.security.web.session.SessionManagementFilter@eddc9bb, org.springframework.security.web.access.ExceptionTranslationFilter@7df5549e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d1fd2aa]
+2022-11-29 21:52:32 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-29 21:52:33 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-29 21:52:33 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:52:33 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '/limi'
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_1
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_1
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_2
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_2
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_1
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_3
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_3
+2022-11-29 21:52:33 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_2
+2022-11-29 21:52:33 INFO  main com.tyd.BlogApplication Started BlogApplication in 5.887 seconds (JVM running for 6.801)
+2022-11-29 21:52:57 INFO  http-nio-8080-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 21:52:57 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-11-29 21:52:57 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 20 ms
+2022-11-29 21:52:58 INFO  http-nio-8080-exec-1 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-29 21:52:58认证信息：null
+2022-11-29 21:55:45 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-29 21:55:45 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-11-29 21:55:45 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2022-11-29 21:55:58 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-29 21:55:58 INFO  main com.tyd.BlogApplication Starting BlogApplication on 礼弥 with PID 27820 (E:\javaWeb\blog\target\classes started by Administrator in E:\javaWeb\blog)
+2022-11-29 21:55:58 INFO  main com.tyd.BlogApplication The following profiles are active: dev
+2022-11-29 21:55:59 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-29 21:55:59 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-29 21:55:59 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2022-11-29 21:55:59 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisConfig' of type [com.tyd.common.config.RedisConfig$$EnhancerBySpringCGLIB$$d58a0ae0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:55:59 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@115ca7de' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:55:59 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-29 21:55:59 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-11-29 21:55:59 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:55:59 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-11-29 21:55:59 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-29 21:55:59 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring embedded WebApplicationContext
+2022-11-29 21:55:59 INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1438 ms
+2022-11-29 21:56:00 INFO  main com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-11-29 21:56:00 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-11-29 21:56:02 INFO  main com.tyd.common.util.MinioUtil 默认存储桶已存在
+2022-11-29 21:56:02 INFO  main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+
+Using generated security password: 88de6514-0765-4721-9578-bfc1ca6ac3e8
+
+2022-11-29 21:56:02 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8c3b634, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ca0aa40, org.springframework.security.web.header.HeaderWriterFilter@279ab15e, com.tyd.common.filter.RequestCountFilter@852ef8d, com.tyd.common.filter.SimpleTokenFilter@2c0dca15, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e1fd2bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8e8ceb3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65259737, org.springframework.security.web.session.SessionManagementFilter@45753c22, org.springframework.security.web.access.ExceptionTranslationFilter@25c548d1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11ca8f71]
+2022-11-29 21:56:02 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-29 21:56:02 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-29 21:56:03 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2022-11-29 21:56:03 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '/limi'
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_1
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_1
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_2
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_2
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_1
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_3
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_3
+2022-11-29 21:56:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_2
+2022-11-29 21:56:03 INFO  main com.tyd.BlogApplication Started BlogApplication in 5.256 seconds (JVM running for 6.31)
+2022-11-29 21:56:26 INFO  http-nio-8080-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 21:56:26 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-11-29 21:56:26 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 10 ms
+2022-11-29 21:56:27 INFO  http-nio-8080-exec-1 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-29 21:56:27认证信息：null
+2022-11-29 22:05:02 INFO  http-nio-8080-exec-3 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/image/queryAll请求的方法:POST请求时间：2022-11-29 22:05:02认证信息：null
+2022-11-29 22:05:04 INFO  http-nio-8080-exec-4 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-29 22:05:04认证信息：null
+2022-11-29 22:06:19 INFO  http-nio-8080-exec-6 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-29 22:06:19认证信息：null
+2022-11-29 22:18:09 INFO  http-nio-8080-exec-8 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-29 22:18:09认证信息：null
+2022-11-29 22:49:29 INFO  http-nio-8080-exec-9 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-29 22:49:29认证信息：null

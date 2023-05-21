@@ -1,0 +1,158 @@
+2022-11-30 00:29:27 INFO  lettuce-nioEventLoop-4-1 io.lettuce.core.protocol.CommandHandler null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2022-11-30 00:29:27 INFO  lettuce-eventExecutorLoop-1-2 io.lettuce.core.protocol.ConnectionWatchdog Reconnecting, last destination was localhost/127.0.0.1:6379
+2022-11-30 09:43:33 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-30 09:43:33 INFO  main com.tyd.BlogApplication Starting BlogApplication on 礼弥 with PID 41104 (E:\javaWeb\blog\target\classes started by Administrator in E:\javaWeb\blog)
+2022-11-30 09:43:33 INFO  main com.tyd.BlogApplication The following profiles are active: dev
+2022-11-30 09:43:33 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-30 09:43:33 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-30 09:43:33 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2022-11-30 09:43:34 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisConfig' of type [com.tyd.common.config.RedisConfig$$EnhancerBySpringCGLIB$$7479c9fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-30 09:43:34 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2693c618' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-30 09:43:34 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-30 09:43:34 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-11-30 09:43:34 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-30 09:43:34 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-11-30 09:43:34 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-30 09:43:34 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring embedded WebApplicationContext
+2022-11-30 09:43:34 INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1478 ms
+2022-11-30 09:43:34 INFO  main com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-11-30 09:43:35 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-11-30 09:43:36 INFO  main com.tyd.common.util.MinioUtil 默认存储桶已存在
+2022-11-30 09:43:37 INFO  main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+
+Using generated security password: 6b9463ad-6568-49bb-8b23-2e7033b304d5
+
+2022-11-30 09:43:37 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fec9d33, org.springframework.security.web.context.SecurityContextPersistenceFilter@74844216, org.springframework.security.web.header.HeaderWriterFilter@1f7fcec2, com.tyd.common.filter.RequestCountFilter@2b01c689, com.tyd.common.filter.SimpleTokenFilter@478530cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fd0e118, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34ede267, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@372f7bc, org.springframework.security.web.session.SessionManagementFilter@71f4aeb6, org.springframework.security.web.access.ExceptionTranslationFilter@4f9980e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ca0aa40]
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-30 09:43:37 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-30 09:43:37 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2022-11-30 09:43:37 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '/limi'
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_1
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_1
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_2
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_2
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_1
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_3
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_3
+2022-11-30 09:43:37 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_2
+2022-11-30 09:43:37 INFO  main com.tyd.BlogApplication Started BlogApplication in 5.156 seconds (JVM running for 6.134)
+2022-11-30 09:47:56 INFO  http-nio-8080-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 09:47:56 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-11-30 09:47:56 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 14 ms
+2022-11-30 09:47:57 INFO  http-nio-8080-exec-1 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/image/queryAll请求的方法:POST请求时间：2022-11-30 09:47:57认证信息：null
+2022-11-30 09:48:11 INFO  http-nio-8080-exec-2 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:48:11认证信息：null
+2022-11-30 09:48:53 INFO  http-nio-8080-exec-3 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:48:53认证信息：null
+2022-11-30 09:48:53 INFO  http-nio-8080-exec-4 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:48:53认证信息：null
+2022-11-30 09:49:19 INFO  http-nio-8080-exec-5 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:49:19认证信息：null
+2022-11-30 09:49:56 INFO  http-nio-8080-exec-6 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:49:56认证信息：null
+2022-11-30 09:52:16 INFO  http-nio-8080-exec-7 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:52:16认证信息：null
+2022-11-30 09:54:31 INFO  http-nio-8080-exec-8 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:54:31认证信息：null
+2022-11-30 09:54:35 INFO  http-nio-8080-exec-9 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:54:35认证信息：null
+2022-11-30 09:56:30 INFO  http-nio-8080-exec-10 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:56:30认证信息：null
+2022-11-30 09:56:30 INFO  http-nio-8080-exec-1 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:56:30认证信息：null
+2022-11-30 09:56:36 INFO  http-nio-8080-exec-2 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:56:36认证信息：null
+2022-11-30 09:59:00 INFO  http-nio-8080-exec-3 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task请求的方法:GET请求时间：2022-11-30 09:59:00认证信息：null
+2022-11-30 10:06:52 INFO  http-nio-8080-exec-4 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task/null请求的方法:GET请求时间：2022-11-30 10:06:52认证信息：null
+2022-11-30 10:06:52 INFO  http-nio-8080-exec-4 com.tyd.module.controller.WebSocketServerController null【websocket消息】有新的连接，总数为:1
+2022-11-30 10:06:55 INFO  http-nio-8080-exec-5 com.tyd.module.controller.WebSocketServerController 【websocket消息】连接断开，总数为:0
+2022-11-30 10:07:16 INFO  http-nio-8080-exec-6 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task/null请求的方法:GET请求时间：2022-11-30 10:07:16认证信息：null
+2022-11-30 10:07:16 INFO  http-nio-8080-exec-6 com.tyd.module.controller.WebSocketServerController null【websocket消息】有新的连接，总数为:1
+2022-11-30 10:07:31 INFO  http-nio-8080-exec-7 com.tyd.module.controller.WebSocketServerController 【websocket消息】连接断开，总数为:0
+2022-11-30 10:08:32 INFO  http-nio-8080-exec-8 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/login请求的方法:POST请求时间：2022-11-30 10:08:32认证信息：null
+2022-11-30 10:08:33 INFO  http-nio-8080-exec-8 com.tyd.module.service.impl.UserServiceImpl 礼弥登陆成功    登录时间 ：Wed Nov 30 10:08:33 CST 2022
+2022-11-30 10:08:43 INFO  http-nio-8080-exec-9 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task/eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2Njk4NjA1MTIsImp0aSI6Ijk3Nzk5Y2Q4MDFlMzQ5OWE4ZTcwNDZhZTIzNTE3N2ViIn0.W9CKpWf8Yzla_BPbRc96Gf6Co7iou2ieoAX3DgcqHFg请求的方法:GET请求时间：2022-11-30 10:08:43认证信息：null
+2022-11-30 10:08:43 INFO  http-nio-8080-exec-9 com.tyd.module.controller.WebSocketServerController eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2Njk4NjA1MTIsImp0aSI6Ijk3Nzk5Y2Q4MDFlMzQ5OWE4ZTcwNDZhZTIzNTE3N2ViIn0.W9CKpWf8Yzla_BPbRc96Gf6Co7iou2ieoAX3DgcqHFg【websocket消息】有新的连接，总数为:1
+2022-11-30 10:09:26 INFO  http-nio-8080-exec-10 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:[object KeyboardEvent]
+2022-11-30 10:09:32 INFO  http-nio-8080-exec-1 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:[object KeyboardEvent]
+2022-11-30 10:09:33 INFO  http-nio-8080-exec-2 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:[object KeyboardEvent]
+2022-11-30 10:09:33 INFO  http-nio-8080-exec-3 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:[object KeyboardEvent]
+2022-11-30 10:09:33 INFO  http-nio-8080-exec-4 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:[object KeyboardEvent]
+2022-11-30 10:09:33 INFO  http-nio-8080-exec-5 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:[object KeyboardEvent]
+2022-11-30 10:10:40 INFO  http-nio-8080-exec-6 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task/eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2Njk4NjA1MTIsImp0aSI6Ijk3Nzk5Y2Q4MDFlMzQ5OWE4ZTcwNDZhZTIzNTE3N2ViIn0.W9CKpWf8Yzla_BPbRc96Gf6Co7iou2ieoAX3DgcqHFg请求的方法:GET请求时间：2022-11-30 10:10:40认证信息：null
+2022-11-30 10:10:40 INFO  http-nio-8080-exec-6 com.tyd.module.controller.WebSocketServerController eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2Njk4NjA1MTIsImp0aSI6Ijk3Nzk5Y2Q4MDFlMzQ5OWE4ZTcwNDZhZTIzNTE3N2ViIn0.W9CKpWf8Yzla_BPbRc96Gf6Co7iou2ieoAX3DgcqHFg【websocket消息】有新的连接，总数为:2
+2022-11-30 10:10:40 INFO  http-nio-8080-exec-7 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task/eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2Njk4NjA1MTIsImp0aSI6Ijk3Nzk5Y2Q4MDFlMzQ5OWE4ZTcwNDZhZTIzNTE3N2ViIn0.W9CKpWf8Yzla_BPbRc96Gf6Co7iou2ieoAX3DgcqHFg请求的方法:GET请求时间：2022-11-30 10:10:40认证信息：null
+2022-11-30 10:10:40 INFO  http-nio-8080-exec-7 com.tyd.module.controller.WebSocketServerController eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2Njk4NjA1MTIsImp0aSI6Ijk3Nzk5Y2Q4MDFlMzQ5OWE4ZTcwNDZhZTIzNTE3N2ViIn0.W9CKpWf8Yzla_BPbRc96Gf6Co7iou2ieoAX3DgcqHFg【websocket消息】有新的连接，总数为:3
+2022-11-30 10:10:43 INFO  http-nio-8080-exec-8 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:asdasd
+2022-11-30 10:10:44 INFO  http-nio-8080-exec-9 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:asdasd
+2022-11-30 10:10:44 INFO  http-nio-8080-exec-10 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:asdasd
+2022-11-30 10:10:59 INFO  http-nio-8080-exec-1 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:asdasd
+2022-11-30 10:10:59 INFO  http-nio-8080-exec-2 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:asdasd
+2022-11-30 10:10:59 INFO  http-nio-8080-exec-3 com.tyd.module.controller.WebSocketServerController 【websocket消息】收到客户端消息:asdasd
+2022-11-30 10:11:44 INFO  http-nio-8080-exec-5 com.tyd.module.controller.WebSocketServerController 【websocket消息】连接断开，总数为:2
+2022-11-30 10:11:44 INFO  http-nio-8080-exec-4 com.tyd.module.controller.WebSocketServerController 【websocket消息】连接断开，总数为:1
+2022-11-30 10:11:44 INFO  http-nio-8080-exec-6 com.tyd.module.controller.WebSocketServerController 【websocket消息】连接断开，总数为:0
+2022-11-30 10:11:44 INFO  http-nio-8080-exec-7 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task/eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2Njk4NjA1MTIsImp0aSI6Ijk3Nzk5Y2Q4MDFlMzQ5OWE4ZTcwNDZhZTIzNTE3N2ViIn0.W9CKpWf8Yzla_BPbRc96Gf6Co7iou2ieoAX3DgcqHFg请求的方法:GET请求时间：2022-11-30 10:11:44认证信息：null
+2022-11-30 10:11:44 INFO  http-nio-8080-exec-7 com.tyd.module.controller.WebSocketServerController eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2Njk4NjA1MTIsImp0aSI6Ijk3Nzk5Y2Q4MDFlMzQ5OWE4ZTcwNDZhZTIzNTE3N2ViIn0.W9CKpWf8Yzla_BPbRc96Gf6Co7iou2ieoAX3DgcqHFg【websocket消息】有新的连接，总数为:1
+2022-11-30 10:19:38 INFO  SpringContextShutdownHook com.tyd.module.controller.WebSocketServerController 【websocket消息】连接断开，总数为:0
+2022-11-30 10:19:38 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-30 10:19:38 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-11-30 10:19:38 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2022-11-30 10:19:46 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2022-11-30 10:19:46 INFO  main com.tyd.BlogApplication Starting BlogApplication on 礼弥 with PID 56620 (E:\javaWeb\blog\target\classes started by Administrator in E:\javaWeb\blog)
+2022-11-30 10:19:46 INFO  main com.tyd.BlogApplication The following profiles are active: dev
+2022-11-30 10:19:47 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-30 10:19:47 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-30 10:19:47 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2022-11-30 10:19:47 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisConfig' of type [com.tyd.common.config.RedisConfig$$EnhancerBySpringCGLIB$$ff897636] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-30 10:19:47 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5d1b1c2a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-30 10:19:47 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-30 10:19:48 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-11-30 10:19:48 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-30 10:19:48 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-11-30 10:19:48 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-30 10:19:48 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring embedded WebApplicationContext
+2022-11-30 10:19:48 INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1847 ms
+2022-11-30 10:19:48 INFO  main com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-11-30 10:19:48 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-11-30 10:19:50 INFO  main com.tyd.common.util.MinioUtil 默认存储桶已存在
+2022-11-30 10:19:50 INFO  main org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration 
+
+Using generated security password: 21aca6f7-322e-482b-bf56-9750c9c0c30b
+
+2022-11-30 10:19:50 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45635ae1, org.springframework.security.web.context.SecurityContextPersistenceFilter@65b19e5c, org.springframework.security.web.header.HeaderWriterFilter@40edc64e, com.tyd.common.filter.RequestCountFilter@660b1a9d, com.tyd.common.filter.SimpleTokenFilter@6df2a206, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55665086, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@141229f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7adbec34, org.springframework.security.web.session.SessionManagementFilter@3980b44f, org.springframework.security.web.access.ExceptionTranslationFilter@691eb389, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@184bb873]
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-30 10:19:51 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-30 10:19:51 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2022-11-30 10:19:51 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path '/limi'
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_1
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_1
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_2
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_2
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_1
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllUsingGET_3
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryAllPageUsingPOST_3
+2022-11-30 10:19:51 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: queryByIdUsingGET_2
+2022-11-30 10:19:51 INFO  main com.tyd.BlogApplication Started BlogApplication in 5.861 seconds (JVM running for 6.871)
+2022-11-30 10:27:49 INFO  http-nio-8080-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 10:27:49 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-11-30 10:27:49 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 25 ms
+2022-11-30 10:27:52 INFO  http-nio-8080-exec-1 com.tyd.common.filter.SimpleTokenFilter 请求ip:127.0.0.1请求位置信息:内网IP请求的接口:/limi/task/eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2Njk4NjA1MTIsImp0aSI6Ijk3Nzk5Y2Q4MDFlMzQ5OWE4ZTcwNDZhZTIzNTE3N2ViIn0.W9CKpWf8Yzla_BPbRc96Gf6Co7iou2ieoAX3DgcqHFg请求的方法:GET请求时间：2022-11-30 10:27:52认证信息：null
+2022-11-30 10:27:52 INFO  http-nio-8080-exec-1 com.tyd.module.controller.WebSocketServerController eyJhbGciOiJIUzI1NiIsImJsb2ciOiJqd3QifQ.eyJ1c2VybmFtZSI6IuekvOW8pSIsInJvbGUiOiJ1c2VyIiwidXNlciI6eyJpZCI6MSwidXNlcklkIjo2OTczNTY1OTIxMzY1NDYzMDQwLCJ1c2VybmFtZSI6IuekvOW8pSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiZW1haWwiOiIxNjAxMjQ1MDQzQHFxLmNvbSIsInBob25lIjoiMTg1OTM0MTU0MDEiLCJzZXgiOiLnlLciLCJyb2xlIjoidXNlciIsImNyZWF0ZVRpbWUiOjE2NjQyOTE5NjkwMDB9LCJleHAiOjE2Njk4NjA1MTIsImp0aSI6Ijk3Nzk5Y2Q4MDFlMzQ5OWE4ZTcwNDZhZTIzNTE3N2ViIn0.W9CKpWf8Yzla_BPbRc96Gf6Co7iou2ieoAX3DgcqHFg【websocket消息】有新的连接，总数为:1
+2022-11-30 11:32:20 INFO  SpringContextShutdownHook com.tyd.module.controller.WebSocketServerController 【websocket消息】连接断开，总数为:0
+2022-11-30 11:32:20 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-30 11:32:20 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-11-30 11:32:20 INFO  SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed

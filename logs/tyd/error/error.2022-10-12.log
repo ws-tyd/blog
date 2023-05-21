@@ -1,0 +1,1 @@
+2022-10-12 16:33:04 ERROR http-nio-8080-exec-7 com.tyd.common.exception.GlobalExceptionHandler not support type : class com.tyd.module.pojo.TestVo    时间 :2022-10-12 16:33:04

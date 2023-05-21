@@ -1,0 +1,67 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /limi
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: admin
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+  profiles:
+    active: dev
+  application:
+    name: blog
+  jackson:
+    default-property-inclusion: non_null
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  messages:
+    basename: i18n/messages
+    cache-second: 3600
+    encoding: UTF-8
+#是否开启 swagger-ui
+swagger:
+  enabled: true
+#配置jwt的密钥
+jwt:
+  signKey: admin
+  expirationTime: 7
+#线程配置
+task:
+  pool:
+    corePoolSize: 20
+    maxPoolSize: 40
+    keepAliveSeconds: 300
+    queueCapacity: 50
+# mybaits-plus配置
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+      table-underline: true
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#日志级别
+logging:
+  level:
+    com.tyd: debug
+
+#流量控制
+requestCountFilter:
+  count: 100
+  open: true
+minio:
+  endpoint: http://47.102.148.14:9000  #http://127.0.0.1:9000 #Minio服务所在地址
+  bucketName: pics #存储桶名称
+  accessKey: admin #访问的key
+  secretKey: admin123456 #访问的秘钥

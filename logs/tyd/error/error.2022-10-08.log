@@ -1,0 +1,1 @@
+2022-10-08 00:01:00 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler Maximum upload size exceeded; nested exception is java.lang.IllegalStateException: org.apache.tomcat.util.http.fileupload.impl.SizeLimitExceededException: the request was rejected because its size (1712052) exceeds the configured maximum (100)    时间 :2022-10-08 00:01:00

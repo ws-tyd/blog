@@ -1,0 +1,425 @@
+2023-05-02 15:33:35 ERROR http-nio-8080-exec-4 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/limi].[dispatcherServlet] Servlet.service() for servlet [dispatcherServlet] in context with path [/limi] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-04-29T21:58:17Z. Current time: 2023-05-02T15:33:35Z, a difference of 236118669 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at com.tyd.common.util.JwtUtil.getUserName(JwtUtil.java:57)
+	at com.tyd.common.filter.SimpleTokenFilter.doFilterInternal(SimpleTokenFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at com.tyd.common.filter.RequestCountFilter.doFilterInternal(RequestCountFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-05-02 16:16:02 ERROR http-nio-8080-exec-3 com.tyd.common.exception.GlobalExceptionHandler 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'blog.friends' doesn't exist
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO friends  ( my_id, friends_id, add_time )  VALUES  ( ?, ?, ? )
+### Cause: java.sql.SQLSyntaxErrorException: Table 'blog.friends' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'blog.friends' doesn't exist    时间 :2023-05-02 16:16:02
+2023-05-02 16:17:30 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '16:17:30.611' for column 'add_time' at row 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO b_friends  ( my_id, friends_id, add_time )  VALUES  ( ?, ?, ? )
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '16:17:30.611' for column 'add_time' at row 1
+; Data truncation: Incorrect datetime value: '16:17:30.611' for column 'add_time' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '16:17:30.611' for column 'add_time' at row 1    时间 :2023-05-02 16:17:30
+2023-05-02 16:27:29 ERROR http-nio-8080-exec-3 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1    时间 :2023-05-02 16:27:29
+2023-05-02 16:28:20 ERROR http-nio-8080-exec-6 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1    时间 :2023-05-02 16:28:20
+2023-05-02 16:29:05 ERROR http-nio-8080-exec-8 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1    时间 :2023-05-02 16:29:05
+2023-05-02 16:29:32 ERROR http-nio-8080-exec-10 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1    时间 :2023-05-02 16:29:32
+2023-05-02 16:31:24 ERROR http-nio-8080-exec-2 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1    时间 :2023-05-02 16:31:24
+2023-05-02 16:31:46 ERROR http-nio-8080-exec-4 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1    时间 :2023-05-02 16:31:46
+2023-05-02 16:33:57 ERROR http-nio-8080-exec-6 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1    时间 :2023-05-02 16:33:57
+2023-05-02 16:34:04 ERROR http-nio-8080-exec-8 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 0)' at line 1    时间 :2023-05-02 16:34:04
+2023-05-02 16:38:49 ERROR http-nio-8080-exec-5 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1    时间 :2023-05-02 16:38:49
+2023-05-02 16:38:49 ERROR http-nio-8080-exec-4 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1    时间 :2023-05-02 16:38:49
+2023-05-02 16:40:08 ERROR http-nio-8080-exec-8 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1    时间 :2023-05-02 16:40:08
+2023-05-02 16:40:08 ERROR http-nio-8080-exec-7 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1    时间 :2023-05-02 16:40:08
+2023-05-02 16:45:22 ERROR http-nio-8080-exec-3 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from,remark  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1    时间 :2023-05-02 16:45:22
+2023-05-02 16:45:22 ERROR http-nio-8080-exec-2 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from,remark  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1    时间 :2023-05-02 16:45:22
+2023-05-02 16:47:02 ERROR http-nio-8080-exec-3 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from,remark  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1    时间 :2023-05-02 16:47:02
+2023-05-02 16:47:02 ERROR http-nio-8080-exec-2 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from,remark  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1    时间 :2023-05-02 16:47:02
+2023-05-02 16:47:17 ERROR http-nio-8080-exec-5 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from,remark  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 1)' at line 1    时间 :2023-05-02 16:47:17
+2023-05-02 16:47:17 ERROR http-nio-8080-exec-6 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,my_id,friends_id,add_time,from,remark  FROM b_friends     WHERE (my_id = ? AND friends_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,remark  FROM b_friends 
+ 
+ WHERE (my_id = 6 AND friends_id = 5)' at line 1    时间 :2023-05-02 16:47:17
+2023-05-02 16:58:06 ERROR http-nio-8080-exec-8 com.tyd.common.exception.GlobalExceptionHandler 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-5' for key 'uniqu'
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO b_friends  ( my_id, friends_id, add_time )  VALUES  ( ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-5' for key 'uniqu'
+; Duplicate entry '6-5' for key 'uniqu'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-5' for key 'uniqu'    时间 :2023-05-02 16:58:06
+2023-05-02 16:58:10 ERROR http-nio-8080-exec-9 com.tyd.common.exception.GlobalExceptionHandler 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-5' for key 'uniqu'
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO b_friends  ( my_id, friends_id, add_time )  VALUES  ( ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-5' for key 'uniqu'
+; Duplicate entry '6-5' for key 'uniqu'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-5' for key 'uniqu'    时间 :2023-05-02 16:58:10
+2023-05-02 17:33:58 ERROR http-nio-8080-exec-4 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where friends_id = 6}' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.queryFollowList-Inline
+### The error occurred while setting parameters
+### SQL: select my_id from where friends_id = ?}
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where friends_id = 6}' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where friends_id = 6}' at line 1    时间 :2023-05-02 17:33:58
+2023-05-02 17:33:58 ERROR http-nio-8080-exec-2 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where my_id = 6}' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.queryFanList-Inline
+### The error occurred while setting parameters
+### SQL: select friends_id from where my_id = ?}
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where my_id = 6}' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where my_id = 6}' at line 1    时间 :2023-05-02 17:33:58
+2023-05-02 17:34:01 ERROR http-nio-8080-exec-8 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where friends_id = 6}' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.queryFollowList-Inline
+### The error occurred while setting parameters
+### SQL: select my_id from where friends_id = ?}
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where friends_id = 6}' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where friends_id = 6}' at line 1    时间 :2023-05-02 17:34:01
+2023-05-02 17:34:01 ERROR http-nio-8080-exec-9 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where my_id = 6}' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.queryFanList-Inline
+### The error occurred while setting parameters
+### SQL: select friends_id from where my_id = ?}
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where my_id = 6}' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where my_id = 6}' at line 1    时间 :2023-05-02 17:34:01
+2023-05-02 17:34:11 ERROR http-nio-8080-exec-5 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where my_id = 6}' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.queryFanList-Inline
+### The error occurred while setting parameters
+### SQL: select friends_id from where my_id = ?}
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where my_id = 6}' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where my_id = 6}' at line 1    时间 :2023-05-02 17:34:11
+2023-05-02 17:34:11 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where friends_id = 6}' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.queryFollowList-Inline
+### The error occurred while setting parameters
+### SQL: select my_id from where friends_id = ?}
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where friends_id = 6}' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where friends_id = 6}' at line 1    时间 :2023-05-02 17:34:11
+2023-05-02 17:35:22 ERROR http-nio-8080-exec-3 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where b_friends friends_id = 6}' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.queryFollowList-Inline
+### The error occurred while setting parameters
+### SQL: select my_id from where b_friends friends_id = ?}
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where b_friends friends_id = 6}' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where b_friends friends_id = 6}' at line 1    时间 :2023-05-02 17:35:22
+2023-05-02 17:35:22 ERROR http-nio-8080-exec-2 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.queryFanList-Inline
+### The error occurred while setting parameters
+### SQL: select friends_id from b_friends where my_id = ?}
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1    时间 :2023-05-02 17:35:22
+2023-05-02 17:36:17 ERROR http-nio-8080-exec-3 com.tyd.common.exception.GlobalExceptionHandler 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where b_friends friends_id = 6' at line 1
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.queryFollowList-Inline
+### The error occurred while setting parameters
+### SQL: select my_id from where b_friends friends_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where b_friends friends_id = 6' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where b_friends friends_id = 6' at line 1    时间 :2023-05-02 17:36:17
+2023-05-02 17:52:44 ERROR http-nio-8080-exec-7 com.tyd.common.exception.GlobalExceptionHandler 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-1' for key 'uniqu'
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO b_friends  ( my_id, friends_id, add_time )  VALUES  ( ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-1' for key 'uniqu'
+; Duplicate entry '6-1' for key 'uniqu'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-1' for key 'uniqu'    时间 :2023-05-02 17:52:44
+2023-05-02 17:55:46 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-1' for key 'uniqu'
+### The error may exist in com/tyd/module/mapper/FriendsMapper.java (best guess)
+### The error may involve com.tyd.module.mapper.FriendsMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO b_friends  ( my_id, friends_id, add_time )  VALUES  ( ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-1' for key 'uniqu'
+; Duplicate entry '6-1' for key 'uniqu'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6-1' for key 'uniqu'    时间 :2023-05-02 17:55:46

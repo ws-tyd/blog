@@ -1,0 +1,33 @@
+2023-04-28 16:19:25 ERROR http-nio-8080-exec-3 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [com.tyd.common.util.Result]    时间 :2023-04-28 16:19:25
+2023-04-28 16:25:27 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler Maximum upload size exceeded; nested exception is java.lang.IllegalStateException: org.apache.tomcat.util.http.fileupload.impl.FileSizeLimitExceededException: The field file exceeds its maximum permitted size of 10485760 bytes.    时间 :2023-04-28 16:25:27
+2023-04-28 18:34:47 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize value of type class com.tyd.common.util.Result without a serializer    时间 :2023-04-28 18:34:47
+2023-04-28 18:34:55 ERROR http-nio-8080-exec-3 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize value of type class com.tyd.common.util.Result without a serializer    时间 :2023-04-28 18:34:55
+2023-04-28 18:36:37 ERROR http-nio-8080-exec-4 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize value of type class com.tyd.common.util.Result without a serializer    时间 :2023-04-28 18:36:37
+2023-04-28 18:38:19 ERROR http-nio-8080-exec-2 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize value of type class com.tyd.common.util.Result without a serializer    时间 :2023-04-28 18:38:19
+2023-04-28 18:38:50 ERROR http-nio-8080-exec-3 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize value of type class com.tyd.common.util.Result without a serializer    时间 :2023-04-28 18:38:50
+2023-04-28 18:40:35 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize value of type class com.tyd.common.util.Result without a serializer    时间 :2023-04-28 18:40:35
+2023-04-28 18:43:39 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize value of type class com.tyd.common.util.Result without a serializer    时间 :2023-04-28 18:43:39
+2023-04-28 18:47:05 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize value of type class com.tyd.common.util.Result without a serializer    时间 :2023-04-28 18:47:05
+2023-04-28 18:47:52 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.io.NotSerializableException: com.tyd.module.pojo.Image    时间 :2023-04-28 18:47:52
+2023-04-28 18:48:30 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to serialize object using DefaultSerializer; nested exception is java.io.NotSerializableException: com.tyd.module.pojo.Image    时间 :2023-04-28 18:48:30
+2023-04-28 18:50:12 ERROR main org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method cacheManager in com.tyd.common.config.RedisConfig required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'redisTemplate' in 'RedisAutoConfiguration' not loaded because @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) found beans named redisTemplate
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
+2023-04-28 18:50:48 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler Cannot serialize value of type class com.tyd.common.util.Result without a serializer    时间 :2023-04-28 18:50:48
+2023-04-28 22:32:26 ERROR http-nio-8080-exec-1 com.tyd.common.exception.GlobalExceptionHandler JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 3, column: 2]    时间 :2023-04-28 22:32:26

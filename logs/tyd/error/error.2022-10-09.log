@@ -1,0 +1,35 @@
+2022-10-09 10:44:36 ERROR main org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    io.minio.S3Base.<clinit>(S3Base.java:104)
+
+The following method did not exist:
+
+    okhttp3.RequestBody.create([BLokhttp3/MediaType;)Lokhttp3/RequestBody;
+
+The method's class, okhttp3.RequestBody, is available from the following locations:
+
+    jar:file:/E:/environment/maven/apache-maven-3.5.4-bin/mavenStore/com/squareup/okhttp3/okhttp/3.14.9/okhttp-3.14.9.jar!/okhttp3/RequestBody.class
+
+The class hierarchy was loaded from the following locations:
+
+    okhttp3.RequestBody: file:/E:/environment/maven/apache-maven-3.5.4-bin/mavenStore/com/squareup/okhttp3/okhttp/3.14.9/okhttp-3.14.9.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of okhttp3.RequestBody
+
+2022-10-09 14:58:52 ERROR http-nio-8080-exec-7 com.tyd.common.exception.GlobalExceptionHandler 2022-10/09/d981a757b024475bb2d8e496960bb666.jpg : bucket name does not follow Amazon S3 standards. For more information refer http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html    时间 :2022-10-09 14:58:52
+2022-10-09 15:00:14 ERROR http-nio-8080-exec-6 com.tyd.common.exception.GlobalExceptionHandler 2022-10/09/d981a757b024475bb2d8e496960bb666.jpg : bucket name does not follow Amazon S3 standards. For more information refer http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html    时间 :2022-10-09 15:00:14
+2022-10-09 15:01:39 ERROR http-nio-8080-exec-3 com.tyd.common.exception.GlobalExceptionHandler The specified bucket does not exist    时间 :2022-10-09 15:01:39
+2022-10-09 15:08:25 ERROR http-nio-8080-exec-8 com.tyd.common.exception.GlobalExceptionHandler 资源未找到    时间 :2022-10-09 15:08:25
+2022-10-09 18:30:32 ERROR http-nio-8080-exec-6 com.tyd.common.exception.GlobalExceptionHandler Request method 'GET' not supported    时间 :2022-10-09 18:30:32
+2022-10-09 18:30:43 ERROR http-nio-8080-exec-8 com.tyd.common.exception.GlobalExceptionHandler Required request part 'file' is not present    时间 :2022-10-09 18:30:43

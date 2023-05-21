@@ -1,0 +1,2 @@
+2022-10-20 11:01:41 ERROR http-nio-8080-exec-7 com.tyd.common.exception.GlobalExceptionHandler / : bucket name must be at least 3 and no more than 63 characters long    时间 :2022-10-20 11:01:41
+2022-10-20 11:06:29 ERROR http-nio-8080-exec-5 com.tyd.common.exception.GlobalExceptionHandler pics/2022-10/ : bucket name does not follow Amazon S3 standards. For more information refer http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html    时间 :2022-10-20 11:06:29
